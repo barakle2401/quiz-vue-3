@@ -9,7 +9,9 @@ defineEmits(["select"]);
 </script>
 
 <template>
-  <div class="bg-white shadow overflow-hidden sm:rounded-lg px-4 py-5 sm:px-6">
+  <div
+    class="bg-white shadow overflow-hidden sm:rounded-lg px-4 py-5 sm:px-6 w-96"
+  >
     <h1 class="text-lg">{{ question }}</h1>
     <div class="flex flex-col text-pink-500">
       <button
@@ -22,4 +24,4 @@ defineEmits(["select"]);
     </div>
   </div>
 </template>
-<style scoped></style>
+<style></style>

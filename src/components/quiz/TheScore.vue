@@ -1,8 +1,12 @@
 <script setup lang="ts">
 import { useRoute, useRouter } from "vue-router";
-
+import { computed } from "@vue/runtime-core";
 const route = useRoute();
 const router = useRouter();
+
+const scoreStr = computed(() => {
+  return `Your score is ${route.params.score} / ${route.params.totalQuestions}`;
+});
 </script>
 
 <template>
@@ -11,10 +15,7 @@ const router = useRouter();
       <div
         class="bg-white shadow overflow-hidden sm:rounded-lg px-4 py-5 sm:px-6 mb-12 border-pink-300 border-2"
       >
-        <h1 class="courier">
-          Your score is {{ route.params.score }} /
-          {{ route.params.totalQuestions }}
-        </h1>
+        <h1 class="courier" v-text="scoreStr"></h1>
       </div>
       <div
         class="bg-pink-300 shadow overflow-hidden sm:rounded-lg sm:px-6 animate-bounce"
