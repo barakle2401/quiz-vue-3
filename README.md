@@ -1,4 +1,4 @@
-# Vue 3 + Vite + Composition api + Vue router 
+# Vue 3 + Vite + Composition api
 I developed this small project in order to learn and practice new composition api vue 3, vite and more new and awsomes technologies.
 
 thanks to [opentdb]( https://opentdb.com/)  for the api.
